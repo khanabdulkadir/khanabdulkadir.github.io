@@ -1,74 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Nepali Zone</title>
-  <style>style>
-body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-}
-@keyframes gradient {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
-  </style>
+  <title>Home | Nepali Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Animated gradient background */
     body {
-      font-family: Arial;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #2a5298);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
       text-align: center;
     }
-    .header {
-      background: #0099cc;
-      color: white;
-      padding: 10px;
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
-    .nav {
-      background: #fff;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
+
+    header {
+      padding: 30px 20px 10px;
     }
-    .nav a {
+
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1em;
+      margin: 5px 0;
+      font-style: italic;
+      color: #ffd700;
+    }
+
+    nav {
+      margin: 30px 0;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .menu a {
       display: block;
-      margin: 5px;
+      width: 100%;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
       text-decoration: none;
-      color: #333;
-      background: #e0e0e0;
-      padding: 10px;
-      border-radius: 5px;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.3s;
     }
-    .marquee {
-      background: #ffcc00;
-      color: #000;
-      padding: 5px;
-      font-weight: bold;
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .emoji {
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Welcome to Nepali Zone</h1>
+    <p>नए वीडियो हर सप्ताह!</p>
+  </header>
 
-  <div class="header">
-    <h1>Khan Abdul Kadir Nepali</h1>
-  </div>
+  <nav class="menu">
+    <a href="index.html"><span class="emoji">🏠</span>Home</a>
+    <a href="gallery.html"><span class="emoji">📸</span>Gallery</a>
+    <a href="audio.html"><span class="emoji">🎵</span>Audio</a>
+    <a href="contact.html"><span class="emoji">📞</span>Contact</a>
+    <a href="download.html"><span class="emoji">📥</span>Downloads</a>
+  </nav>
 
-  <div class="marquee">
-    <marquee>Welcome to Nepali Zone - नए वीडियो हर सप्ताह!</marquee>
-  </div>
-
-  <div class="nav">
-    <a href="#">🏠 Home</a>
-    <a href="#">📸 Gallery</a>
-    <a href="#">🎵 Audio</a>
-    <a href="#">📞 Contact</a>
-    <a href="#">📥 Downloads</a>
-  </div>
-
+  <footer>
+    <p>© 2025 Khan Abdul Kadir Nepali | Powered by GitHub Pages</p>
+  </footer>
 </body>
 </html>
