@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👽 Welcome to Hacker Zone 👽</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 20px;
+    }
+    .enter-screen {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .enter-button img {
+      width: 200px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    .profile {
+      margin-top: 30px;
+    }
+    .zone {
+      margin-top: 30px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      color: #00ffff;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    a {
+      display: block;
+      margin: 10px 0;
+      color: #00ff00;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="enter-screen" id="welcome">
+    <h1>👽 Welcome to Hacker Zone 👽</h1>
+    <div class="enter-button" onclick="enterSite()">
+      <img src="https://i.ibb.co/cBkTKhD/d13h52m-fa6c6d09-8985-434c-8a96-ed383870bf21.gif" alt="Enter Button" />
+    </div>
+  </div>
+
+  <div class="hidden" id="mainContent">
+    <div class="profile">
+      <h2>🛡️ Khan Abdul Kadir Nepali - Hacker Profile 🛡️</h2>
+    </div>
+
+    <div class="zone">
+      <div class="section-title">📱 Mobile & Web Flood Zones</div>
+      <a href="mobile-flooder-fake.html">Mobile Flooder (Demo)</a>
+      <a href="working-flood-ui.html">Working Flooder UI</a>
+      <a href="room-flooder-fake.html">Unlimited Room Flooder</a>
+
+      <div class="section-title">🔒 Nimbuzz Hacking Zones</div>
+      <a href="nimbuzz-id-maker.html">Nimbuzz ID Maker Zone</a>
+      <a href="nimbuzz-id-hack.html">Nimbuzz ID Hacking Zone</a>
+      <a href="nimbuzz-password-list.html">Nimbuzz Password List</a>
+      <a href="facebook-gmail-hack.html">Facebook/Gmail Hacking</a>
+      <a href="hacking-tutorial.html">Hacking Explained</a>
+
+      <div class="section-title">🔧 Tools & Features</div>
+      <a href="multi-id-zone.html">Nimbuzz Multi ID Zone</a>
+      <a href="nick-style.html">Create Stylish Nickname</a>
+      <a href="pc-tools.html">Nimbuzz PC Tools 2012</a>
+      <a href="operamini.html">OperaMini Software</a>
+      <a href="change-password.html">Change Nimbuzz Password</a>
+
+      <div class="section-title">🛡️ Security / Block / Tips</div>
+      <a href="room-blocker.html">Room Flood Blocker</a>
+      <a href="room-hack.html">Room Hack New Trick</a>
+      <a href="anti-kick.html">Anti Kick Trick</a>
+      <a href="tips-and-tricks.html">Nimbuzz Tips & Auto Flood</a>
+
+      <div class="section-title">📥 Download Zones</div>
+      <a href="nimbuzz-xml.html">Nimbuzz XML Code</a>
+      <a href="mobile-bots.html">Nimbuzz Mobile Bots</a>
+      <a href="all-versions.html">Nimbuzz All Versions</a>
+      <a href="pc-versions.html">Nimbuzz PC Versions</a>
+      <a href="download.html">Mobile & PC Software Zone</a>
+
+      <div class="section-title">📺 Others</div>
+      <a href="friends-site.html">My Friends Site Zone</a>
+      <a href="youtube.html">My YouTube Channel Zone</a>
+      <a href="contact.html">Vote & Contact Zone</a>
+    </div>
+  </div>
+
+  <script>
+    function enterSite() {
+      document.getElementById("welcome").classList.add("hidden");
+      document.getElementById("mainContent").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
